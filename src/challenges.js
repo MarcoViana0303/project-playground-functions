@@ -71,7 +71,7 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-let array1 = [2, 15, 7, 9, 45]
+let array1 = [9, 25];
 console.log(fizzBuzz(array1));
 function fizzBuzz(array) {
   // seu código aqui
@@ -98,17 +98,33 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
+let frase = 'hi there';
+console.log(encode(frase));
+function encode(string) {
   // seu código aqui
+
 }
 function decode() {
   // seu código aqui
 }
 
 // Desafio 10
-function techList() {
+let tec = [];
+let nome = 'Lucas';
+console.log(techList(tec, nome));
+function techList(nomeTec, nomePessoa) {
   // seu código aqui
+   let tecENome = [];
+   for (let index = 0; index < nomeTec.length; index+= 1) {
+    tecENome.push({tech:nomeTec[index],name: nomePessoa});
+    
+   }
+   if (nomeTec === 0) {
+    return 'Vazio!'
+   }
+   return tecENome;
 }
+
 
 module.exports = {
   calcArea,
