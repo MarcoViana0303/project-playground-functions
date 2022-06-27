@@ -18,25 +18,44 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-console.log(splitSentence('foguete'));
+console.log(splitSentence('go Trybe'));
 function splitSentence(string) {
   // seu código aqui
   return string.split(' ')
 }
 
 // Desafio 4
-function concatName() {
+const array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']
+console.log(concatName(array));
+function concatName(param) {
   // seu código aqui
+ 
 }
 
 // Desafio 5
-function footballPoints() {
+console.log(footballPoints(14, 8));
+function footballPoints(wins, ties) {
   // seu código aqui
+  let contWins = 0;
+  let contTies = 0;
+  for (let index = 0; index <= wins; index += 1) {
+    
+    
+  }
+
 }
 
 // Desafio 6
-function highestCount() {
+let arrayNum = [9, 1, 2, 3, 9, 5, 7];
+console.log(highestCount(arrayNum));
+function highestCount(array) {
   // seu código aqui
+  let cont = 0;
+  for (let index = 0; index < array.length; index += 1) {
+      let maiorNumero = Math.max( array[index]) 
+    
+  }
+  return maiorNumero;
 }
 
 // Desafio 7
