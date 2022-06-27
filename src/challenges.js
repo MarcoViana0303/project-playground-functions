@@ -36,15 +36,18 @@ function concatName(param) {
 }
 
 // Desafio 5
-console.log(footballPoints(14, 8));
+console.log(footballPoints(0, 0));
 function footballPoints(wins, ties) {
   // seu código aqui
   let contWins = 0;
   let contTies = 0;
-  for (let index = 0; index <= wins; index += 1) {
-    
-    
-  }
+  let somaTotal = 0
+ 
+    contWins = contWins + (wins * 3);
+    contTies = contTies + ties;
+    somaTotal = contTies + contWins;
+
+    return somaTotal;
 
 }
 
