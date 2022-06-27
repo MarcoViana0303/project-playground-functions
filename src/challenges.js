@@ -1,6 +1,13 @@
 // Desafio 1
-function compareTrue() {
+console.log(compareTrue(true, true));
+function compareTrue(tatu, cigarra) {
   // seu código aqui
+  if (tatu && cigarra) {
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
 // Desafio 2
