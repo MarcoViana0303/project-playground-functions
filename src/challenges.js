@@ -25,11 +25,14 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-const array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']
+const array = ['foguete', 'não', 'tem', 'ré'];
 console.log(concatName(array));
 function concatName(param) {
   // seu código aqui
- 
+  let primeiroEUltimo = '';
+  primeiroEUltimo = param[param.length-1] + ', ' + param[0];
+
+ return primeiroEUltimo;
 }
 
 // Desafio 5
@@ -109,19 +112,21 @@ function decode() {
 }
 
 // Desafio 10
-let tec = [];
+let tec = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'];
 let nome = 'Lucas';
 console.log(techList(tec, nome));
 function techList(nomeTec, nomePessoa) {
   // seu código aqui
    let tecENome = [];
+   if (nomeTec.length === 0) {
+    return 'Vazio!'
+   }
+
    for (let index = 0; index < nomeTec.length; index+= 1) {
     tecENome.push({tech:nomeTec[index],name: nomePessoa});
     
    }
-   if (nomeTec === 0) {
-    return 'Vazio!'
-   }
+  
    return tecENome;
 }
 
