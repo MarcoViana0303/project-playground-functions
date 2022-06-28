@@ -122,13 +122,13 @@ function encode(string) {
   return vogal;
 }
 
-let frase = 'h3 th2r2!';
-console.log(decode(frase));
+let frase2 = 'h3 th2r2!';
+console.log(decode(frase2));
 function decode(string) {
   // seu código aqui
-  let vogal = string.replace(/1/gi, 'a').replace(/2/gi, 'e').replace(/3/gi, 'i').replace(/4/gi, 'o').replace(/5/gi, 'u');
+  let vogal2 = string.replace(/1/gi, 'a').replace(/2/gi, 'e').replace(/3/gi, 'i').replace(/4/gi, 'o').replace(/5/gi, 'u');
 
-  return vogal;
+  return vogal2;
 }
 
 // Desafio 10
