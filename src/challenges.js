@@ -113,19 +113,22 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-let frase = 'hi there';
+let frase = 'g4 Tryb2!';
 console.log(encode(frase));
 function encode(string) {
   // seu código aqui
-  let vogalE = string.replace(/e/gi, '2');
-  let vogalI = string.replace(/i/gi, '3');
+  let vogal = string.replace(/a/gi, '1').replace(/e/gi, '2').replace(/i/gi, '3').replace(/o/gi, '4').replace(/u/gi, '5');
 
-  return vogalE;
+  return vogal;
 }
 
-
-function decode() {
+let frase = 'h3 th2r2!';
+console.log(decode(frase));
+function decode(string) {
   // seu código aqui
+  let vogal = string.replace(/1/gi, 'a').replace(/2/gi, 'e').replace(/3/gi, 'i').replace(/4/gi, 'o').replace(/5/gi, 'u');
+
+  return vogal;
 }
 
 // Desafio 10
