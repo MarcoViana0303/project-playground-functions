@@ -146,11 +146,19 @@ function techList(nomeTec, nomePessoa) {
     tecENome.push({
       tech:nomeTec[index],
        name: nomePessoa
-      });
+      })
     
    }
+   tecENome.sort(function(a, b) {
+    if(a.tech < b.tech) {
+      return -1;
+    } else {
+      return true;
+    }
+  });
   
    return tecENome;
+
 }
 
 
