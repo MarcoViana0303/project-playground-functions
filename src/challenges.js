@@ -70,10 +70,19 @@ function highestCount(array) {
 }
 
 // Desafio 7
-console.log(catAndMouse(0, 5, -2));
+console.log(catAndMouse(0, 5, -5));
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-
+  if (cat1 - cat2 < mouse) {
+    return 'cat1';
+  }
+  else if (cat2 - cat1 < mouse) {
+    return 'cat1';
+  }
+  else
+  {
+    return 'Os gatos trombam e o rato foge';
+  }
 }
 
 // Desafio 8
@@ -108,8 +117,13 @@ let frase = 'hi there';
 console.log(encode(frase));
 function encode(string) {
   // seu código aqui
+  let vogalE = string.replace(/e/gi, '2');
+  let vogalI = string.replace(/i/gi, '3');
 
+  return vogalE;
 }
+
+
 function decode() {
   // seu código aqui
 }
@@ -126,7 +140,10 @@ function techList(nomeTec, nomePessoa) {
    }
 
    for (let index = 0; index < nomeTec.length; index+= 1) {
-    tecENome.push({tech:nomeTec[index],name: nomePessoa});
+    tecENome.push({
+      tech:nomeTec[index],
+       name: nomePessoa
+      });
     
    }
   
