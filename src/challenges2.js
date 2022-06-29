@@ -1,8 +1,13 @@
 // Desafio 11
-let array = [1, 1, 8, 6, 6, 2, 0, 7, 9, 9, 5];
+let array = [1, 1, 9, 6, 6, 2, 0, 7, 9, 9, 5];
 console.log(generatePhoneNumber(array));
 function generatePhoneNumber(numeroTel) {
   // seu código aqui
+  let ddd = numeroTel.slice(0, 2).toString().replace(/,/g, '');
+    let prefixo = numeroTel.slice(2, 7).toString().replace(/,/g, '');
+    let posTraco = numeroTel.slice(-4).toString().replace(/,/g, '');
+    let telefoneCompleto = `(${ddd}) ${prefixo}-${posTraco}`;
+
     if (numeroTel.length !== 11) 
     { 
       return 'array com tamanho incorreto.'; 
@@ -25,8 +30,7 @@ function generatePhoneNumber(numeroTel) {
         }
       }
     }
-    let ddd = `(${numeroTel.slice(0, 2).join('')}) `;
-    return (`${ddd}${numeroTel.slice(2, 7).join('')}-${numeroTel.slice(7).join('')}`);
+    return telefoneCompleto;
   }
 
 
