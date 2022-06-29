@@ -1,10 +1,35 @@
 // Desafio 11
-let array = [1, 1, 9, 6, 6, 2, 0, 7, 9, 9, 5];
+let array = [1, 1, 8, 6, 6, 2, 0, 7, 9, 9, 5];
 console.log(generatePhoneNumber(array));
 function generatePhoneNumber(numeroTel) {
   // seu código aqui
-  
-}
+    if (numeroTel.length !== 11) 
+    { 
+      return 'array com tamanho incorreto.'; 
+    } 
+
+    for (let index = 0; index < numeroTel.length; index += 1) {
+      let contador = 0;
+      if (numeroTel[index] > 9 || numeroTel[index] < 0)
+       {
+        return 'não é possível gerar um número de telefone com esses valores';
+      }
+
+      for (let index1 = 0; index1 < numeroTel.length; index1 += 1) {
+        if (numeroTel[index] === numeroTel[index1]) {
+          contador += 1;
+        }
+        if (contador >= 3) 
+        {
+          return 'não é possível gerar um número de telefone com esses valores';
+        }
+      }
+    }
+    let ddd = `(${numeroTel.slice(0, 2).join('')}) `;
+    return (`${ddd}${numeroTel.slice(2, 7).join('')}-${numeroTel.slice(7).join('')}`);
+  }
+
+
 
 // Desafio 12
 console.log(triangleCheck(10, 14, 8));
